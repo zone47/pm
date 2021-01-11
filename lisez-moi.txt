@@ -1,2 +1,8 @@
 Scripts pour récupérer des données depuis l' API Collections de Paris musées
 http://apicollections.parismusees.paris.fr/graphql
+
+getid.py
+#Script pour récupérer une liste de notice par type
+
+getn.py
+#Script pour récupérer les données d'une notice
