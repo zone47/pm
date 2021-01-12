@@ -1,4 +1,4 @@
-#script pour récupérer une liste de notice par type
+#script pour recuperer une liste de notice par type
 import requests
 import json
 import os

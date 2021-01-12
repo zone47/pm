@@ -1,5 +1,5 @@
 #C:\Python27\python E:\WD\parismusee\getn.py
-#Script pour récupérer les données d'une notice
+#Script pour recuperer les donnees d'une notice
 import requests
 import json
 import os
