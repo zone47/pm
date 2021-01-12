@@ -20,9 +20,7 @@ while i < 14:
     ]}, limit:500, offset:"""+offset+""") {
     count
     entities {
-      ... on NodeOeuvre {
-      nid
-      }
+    entityUuid
     }
     }
   }

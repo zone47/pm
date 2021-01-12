@@ -19,9 +19,12 @@ for id in tabids:
   print(id)
   query = """
 {
-  nodeById(id: \""""+id+"""\") {
-    ... on NodeOeuvre {
-      entityId
+  nodeQuery(
+    filter: {conditions: [{field: \"uuid\", value: \""""+id+"""\"}]}
+  ){
+    entities {
+      entityUuid
+      ... on NodeOeuvre {
       title
       absolutePath
       fieldUrlAlias
@@ -50,7 +53,7 @@ for id in tabids:
 
         }
       }
-      queryFieldVisuelsPrincipals(filter: {conditions: [
+      queryFieldVisuels(filter: {conditions: [
         {field: "field_image_libre", value: "1"}
       ]}) {
         entities {
@@ -213,7 +216,7 @@ for id in tabids:
           }
         }
       }
-    }
+    }}
   }
 }
 """ 
