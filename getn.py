@@ -64,6 +64,7 @@ for id in tabids:
           }
         }
       }
+
       fieldDateProduction {
         startPrecision
         startYear
